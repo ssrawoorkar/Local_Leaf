@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF</title>
+    <!-- Replace YOUR_API_KEY_HERE with your actual API key -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOsiS1jLVvH5aMwO-a_TFOhg9k8XUYUd8&callback=initMap&libraries=maps,marker&v=beta"></script>
+    <script src="FF.js"></script>
+    <link rel="stylesheet" href="FF.css">
+</head>
+<body>
+    <header>
+        <h1>Park occupy checker website</h1>
+    </header>
+    <main>
+        <div id="map"></div>
+    </main>
+    <script>
+        function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 40.12150192260742, lng: -100.45039367675781 },
+        zoom: 4
+    });
+
+    var marker = new google.maps.Marker({
+        position: { lat: 40.12150192260742, lng: -100.45039367675781 },
+        map: map,
+        title: 'My location'
+    });
+}
+    </script>
+    <footer>
+        <p>&copy; 2024 My Basic HTML Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
