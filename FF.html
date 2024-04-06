@@ -28,7 +28,7 @@
 
                     // Send LAT and LONG to the server using AJAX
                     $.ajax({
-                        url: 'your_server_endpoint_here', // Replace with your server endpoint
+                        url: '/receive_data', // Replace with your server endpoint
                         method: 'POST',
                         contentType: 'application/json',
                         data: JSON.stringify({lat: LAT, long: LONG}),
