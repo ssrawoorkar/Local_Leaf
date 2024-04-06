@@ -53,4 +53,5 @@ openai.api_key = "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"
 
 completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "Find the 5 nearby parks from" + location}])
 print(completion.choices[0].message.content)
+top5_parks = completion.choices[0].message.content
 
