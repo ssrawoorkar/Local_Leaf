@@ -1,4 +1,5 @@
-import urllibfrom geopy.geocoders import Photon
+import urllib
+from geopy.geocoders import Photon
  
 # initialize Photon API
 geolocator = Photon(user_agent="geoapiExercises")
