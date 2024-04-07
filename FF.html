@@ -17,6 +17,15 @@
     </header>
     <div class="container">
         <button class="find-state">Find parks near me</button>
+            <form action="" id="contactForm">
+                <div class="inputBox">
+                    <textarea id="msgContent" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+                <div class="inputBox">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
         <script>
             const findCurrLocation = () => {
                 const status = document.querySelector('.status');
@@ -52,6 +61,8 @@
 
             document.querySelector('.find-state').addEventListener('click', findCurrLocation);
         </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="./index.js"></script>
     </div>
     <footer>
         <p>&copy; 2024 My Basic HTML Page. All rights reserved.</p>
