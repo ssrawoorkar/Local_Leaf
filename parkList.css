@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+ul li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #337ab7;
+    font-weight: bold;
+}

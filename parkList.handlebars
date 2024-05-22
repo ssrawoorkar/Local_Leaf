@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  <link rel="stylesheet" type="text/css" href="/styles/parkList.css">
+</head>
+<body>
+  <div class="container">
+    <h1>List of Events in {{city}}</h1>
+    <ul> <!-- for each park it creates one of the following boxes that show up on the page -->
+      {{#each parks}}
+        <li>{{this.ParkName}} - Event: {{this.Events}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</body>
+</html>

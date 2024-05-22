@@ -1,0 +1,8 @@
+install dependencies: npm install
+
+run app: node app.JS
+
+Notes: Please allow the website access to your location, further more, intially there will be no parks at your location. 
+So you will have to create an event by clicking on the create event button and filling out the details. If the events are
+not showing up then make sure the location that you are saving the parks are correct as geolocation might not recognize 
+smaller or newer cities. 
